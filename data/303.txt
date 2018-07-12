@@ -1,0 +1,5 @@
+【XJOI提高组初赛模拟15】第16题：在INTERNET中电子公告板的缩写是：
+BBS
+FTP
+WWW
+E-mail

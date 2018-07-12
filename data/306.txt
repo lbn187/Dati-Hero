@@ -1,0 +1,5 @@
+【XJOI提高组初赛模拟15】第19题：Linux下超级用户的名字是：
+root
+supervisor
+administrator
+manager

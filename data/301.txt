@@ -1,0 +1,5 @@
+【XJOI提高组初赛模拟15】第13题：在WIN98中，如何查看TCP/IP参数？
+运行ipconfig /all命令
+运行msconfig命令
+运行net view命令
+运行ping命令
