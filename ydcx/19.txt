@@ -1,0 +1,17 @@
+NOIP2004ÆÕ¼°×éÔÄ¶Á³ÌÐò2£º
+program¡¡program2£»
+var
+¡¡¡¡i£¬j£ºinteger£»
+¡¡¡¡str1£¬str2£ºstring£»
+begin
+¡¡¡¡str1£º='pig-is-stupid'£»
+¡¡¡¡str2£º='clever'£»
+¡¡¡¡str1¡¾1¡¿£º='d'£»¡¡str1¡¾2¡¿£º='o'£»
+¡¡¡¡i£º=8£»
+¡¡¡¡for¡¡j£º=1¡¡to¡¡6¡¡do¡¡begin
+¡¡¡¡¡¡¡¡¡¡¡¡str1¡¾i¡¿£º=str2¡¾j¡¿£»inc£¨i£©£»
+¡¡¡¡end£»
+¡¡¡¡writeln£¨str1£©£»
+end.
+
+dog-is-clever

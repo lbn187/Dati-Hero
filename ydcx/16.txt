@@ -1,0 +1,16 @@
+NOIP2003ÆÕ¼°×éÔÄ¶Á³ÌÐò2£º
+program¡¡Program2£»
+var
+¡¡¡¡a£¬t£ºstring£»
+¡¡¡¡i£¬j£ºinteger£»
+begin
+¡¡¡¡a£º=`morning`£»
+¡¡¡¡j£º=¡¡l£»
+    for¡¡i£º=2¡¡to¡¡7¡¡do
+¡¡¡¡¡¡if¡¡£¨a¡¾j¡¿<a¡¾i¡¿£©then j£º=¡¡i£»
+¡¡¡¡j£º=¡¡j-1£»
+¡¡¡¡for¡¡i£º=1¡¡to¡¡j¡¡do
+¡¡¡¡¡¡write¡¡£¨a¡¾i¡¿£©£»
+end£®¡¡
+
+mo

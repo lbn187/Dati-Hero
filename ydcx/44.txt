@@ -1,0 +1,40 @@
+NOIP2009普及组阅读程序4：
+var
+  a：string；
+  n：integer；
+procedure　getnext（var　str：　string）；
+var
+  l，i，j，k：integer；
+  temp：char；
+begin
+  l：=length（str）；
+  k：=l-1；
+  while　（k>=1）　and　（str【k】>str【k+1】）　do dec（k）；
+  i　：=　k　+　1；
+  while　（i<=l）　and　（str【i】>str【k】）　do inc（i）；
+  temp　：=　str【k】；
+  str【k】　：=　str【i-1】；
+  str【i-1】　：=　temp；
+  for　i　：=　l　downto　k　+　1　do
+    for　j　：=　k　+　1　to　i　-　1　do
+	if　str【j】　>　str【j+1】　then
+	  begin
+	    temp　：=　str【j】；
+	    str【j】　：=　str【j+1】；
+	    str【j+1】　：=　temp；
+	  end；
+end；
+begin
+  readln（a）；
+  readln（n）；
+  while　n　>　0　do
+    begin
+      getnext（a）；
+      dec（n）；
+    end；
+  write（a）；
+end.
+输入：NOIP
+      3
+
+NPOI

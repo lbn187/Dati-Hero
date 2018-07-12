@@ -1,0 +1,42 @@
+NOIP2011提高组阅读程序3：
+const v = 100；
+var
+　visited:array【1..v】of boolean；
+　e:array【1..v,1..v】of integer；
+　n,m,ans,i,j,a,b,c:integer；
+procedure dfs（x,len:integer）；
+var
+　i:integer；
+begin
+　visited【x】:=true；
+　if len>ans then ans:=len；
+　for i:=1 to n do
+　　if （not visited（i）） and（e【x,i】 <> -1） then dfs（I,len+e【x,i】）；
+　visited【x】 := false；
+end；
+begin
+　readln（n,m）；
+　for i:=1 to n do
+　for j:=1 to n do
+　e【i】【j】 := -1；
+　for i:=1 to m do
+　begin
+　readln（a,b,c）；
+　e【a】【b】:=c；
+　e【b】【a】:=c；
+　end；
+　for i:=1 to n do visited【i】:=false；
+　ans:=0；
+　for i:=1 to n do dfs（i,0）；
+　writeln（ans）；
+end.
+输入：
+4 6
+1 2 10
+2 3 20
+3 4 30
+4 1 40
+1 3 50
+2 4 60
+
+150

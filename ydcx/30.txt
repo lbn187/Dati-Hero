@@ -1,0 +1,19 @@
+NOIP2006ÆÕ¼°×éÔÄ¶Á³ÌÐò2£º
+Program¡¡ex302£»¡¡
+const¡¡m£ºarray¡¾0..4¡¿¡¡of¡¡integer=£¨2£¬3£¬5£¬7£¬13£©£»¡¡
+var¡¡
+i£¬j£ºinteger£»¡¡
+t£º¡¡longint£»¡¡
+begin¡¡
+for¡¡i£º=0¡¡to¡¡4¡¡do¡¡
+begin¡¡
+t£º=1£»¡¡
+for¡¡j£º=1¡¡to¡¡m¡¾i¡¿-1¡¡do¡¡
+t£º=t*2£»¡¡
+t£º=£¨t*2-1£©*t£»¡¡
+write£¨t£¬' '£©£»¡¡
+end£»¡¡
+writeln£»¡¡
+end.¡¡
+
+6 28 496 8128 33550336 

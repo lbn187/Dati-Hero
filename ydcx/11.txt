@@ -1,0 +1,35 @@
+NOIP2001普及组阅读程序4：
+PRGORAM　CHU7_4；
+　VAR　N，K，I：INTEGER；
+　　　A：ARRAY【1..40】OF　INTEGER；
+　PROCEDURE　FIND（X：INTEGER）；
+　　VAR　S，I1，J1：INTEGER；
+　　　　　　P：BOOLEAN；
+　　BEGIN
+　　　　I1：=0；
+　　　　P：=TRUE；
+　　　　WHILE　P　DO
+　　　　　BEGIN
+　　　　　　I1：=I1+1；
+　　　　　　S：=0；
+　　　　　　FOR　J1：=1　TO　N　DO　
+　　　　　　　IF　A【J1】>A【I1】THEN　S：=S+1；
+　　　　　　IF（S=X-1）THEN
+　　　　　　　BEGIN
+　　　　　　　　WRITELN（A【I1】）；
+　　　　　　　　P：=FALSE
+　　　　　　　END；
+　　　　　　END
+　　　　　END；
+　　BEGIN
+　　　READLN（N，K）；
+　　　FOR　I：=1　TO　N　DO　
+　　　　READ（A【I】）；
+　　　FIND（K）；
+　　　FIND（N-K）；
+END.
+输入：10 4
+　　　12 34 5 65 67 87 7 90 120 13
+
+67
+34

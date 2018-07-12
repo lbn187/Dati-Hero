@@ -1,0 +1,32 @@
+NOIP2011提高组阅读程序2：
+var　　
+　　n:integer；　　　
+
+procedure　f2（x，y:integer）；　
+forward；　　　
+
+
+
+
+
+
+　
+　
+
+procedure　f1（x，y:integer）；　
+begin　　　
+　　if　x<n　then　　　　
+　　f2（y，x+y）；　　　
+end；　　　　　
+procedure　f2（x，y:integer）；　　　
+begin　　　　
+write（x，' '）；　　　　
+f1（y，x+y）；　　　
+end；　　　　　
+begin　　　　
+readln（n）；　　　　
+f1（0，1）；　　　
+end.　　　　　
+输入：30
+
+1 2 5 13 34 

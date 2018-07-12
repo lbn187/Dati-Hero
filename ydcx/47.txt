@@ -1,0 +1,25 @@
+NOIP2010普及组阅读程序3：
+var
+　　　s：string；
+　　　i：integer；
+　　　m1，m2：char；
+begin
+　　　readln（s）；
+　　　m1：=’’；
+　　　m2：=’’；
+　　　for　i：=1　to　length（s）　do
+　　　　　　if　s【i】>m1　then
+　　　　　　begin
+　　　　　　　　　m2：=m1；
+　　　　　　　　　m1：=s【i】；
+　　　　　　end
+　　　　　　else　if　s【i】>m2　then
+　　　　　　　　　m2：=s【i】；
+　　　writeln（ord（m1），’　’，ord（m2））；
+end.
+输入：Expo 2010 Shanghai China
+提示：
+字符	空格	‘0’	‘A’	‘a’
+ASCII码	32	 48	 65	 97
+
+120 112

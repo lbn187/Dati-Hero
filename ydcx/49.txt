@@ -1,0 +1,15 @@
+NOIP2011普及组阅读程序2：
+Var
+　map，tel：string；
+  i：integer；
+begin
+　　　　map：=’22233344455566677778889999’；
+　　　　readln（tel）；
+　　　　for　i：=1　　to　length（tel）　　do
+　　　　if　　（tel【i】　>=　’O’）　　and　　（tel【i】　<=　’9’）
+　　　　then　write（tel【i】）
+　　　　else　if　　（tel【i】>=’A’）　　and　　（tel【i】　<=　’Z’）
+then　write（map【ord（tel【i】）-0rd（’A’）　+1】）；　end．
+输入：CCF-NOIP-2011
+
+22366472011

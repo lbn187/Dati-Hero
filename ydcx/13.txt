@@ -1,0 +1,25 @@
+NOIP2002普及组阅读程序2：
+program　exp2；
+var　n，jr，jw，jb：integer；　
+     ch1：char；　
+     ch：array【1..20】d　char；　
+begin
+  readln（n）；
+  for　i：=1　to　n　do　read（ch【i】）：
+  jr：=1；jwz=n；jb：=n；：
+  while　（jr<=jw）do
+  begin
+    if（ch【jw】='R'）　then　begin
+    ch1：=Ch【jr】；Ch【jr】：=ch【jw】；ch【jw】：=ch1：jr：=jr+13
+  end
+  else　if　ch【jw】='W' then　jw：=jw-1
+  else　begin
+  ch1：=ch【jw】；ch【jw】：=ch【jb】；ch【jb】：=ch1；jw：=jw-1；jb：=jb-1；
+  end；
+  end；
+  for　i：=1　to　n　do　write（ch【i】）；
+end.
+输入：10
+RBRBWWRBBR
+
+RRRRWWBBBB

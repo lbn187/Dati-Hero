@@ -1,0 +1,19 @@
+NOIP2000普及组阅读程序1：
+PROGRAM　NOI_002；
+VAR　　　I，J，L，N，K，S，T：INTEGER；
+　　     B：ARRAY【1..10】　OF　　0..9；　　
+BEGIN
+　READLN（L，N）；　S：=L；　K：=1；　T：=L；
+　WHILE　　S<N　　DO
+　　BEGIN　K：=K+1；T：=T*L；S：=S+T　END；
+　S：=S-T；　　N：=N-S-1；
+　FOR　　I：=1　TO　10　DO　　B【I】：=0；
+　J：=11；
+　WHILE　　N>0　DO
+　BEGIN　　J：=J-1；　B【J】：=N　MOD　L；　　N：=N　DIV　L　　　END；
+　FOR　　I：=10-K+1　　TO　　10　　DO　　　
+    WRITE（CHR（ORD（'A'）+B【I】））；
+END.
+输入：4 167
+
+BBAC

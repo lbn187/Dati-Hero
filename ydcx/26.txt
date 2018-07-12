@@ -1,0 +1,14 @@
+NOIP2005ÆÕ¼°×éÔÄ¶Á³ÌÐò2£º
+var
+str¡¡£º¡¡string£»
+i¡¡£º¡¡integer£»
+begin
+str¡¡£º=¡¡'Today-is-terrible!'£»
+for¡¡i¡¡£º=¡¡7¡¡to¡¡11¡¡do
+if¡¡str¡¡=¡¡'-'¡¡then¡¡str¡¾i-1¡¿£º=¡¡'x'£»
+for¡¡i¡¡£º=¡¡13¡¡downto¡¡1¡¡do
+if¡¡str¡¡=¡¡'t'¡¡then¡¡str¡¾i+1¡¿£º=¡¡'e'£»
+writeln£¨str£©£»
+end.
+
+Today-ix-terrible!

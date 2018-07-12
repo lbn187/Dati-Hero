@@ -1,0 +1,24 @@
+NOIP2010普及组阅读程序2：
+Var
+　　　n，m，i：integer；
+function　rSum（j：integer）：integer；
+var
+　　　sum：integer；
+begin
+　　　sum：=0；
+　　　while　j<>0　do
+　　　begin
+　　　　　　sum：=sum*10+（j　mod　10）；
+　　　　　　j：=j　div　10；
+　　　end；
+　　　rSum：=sum；
+end；　
+begin
+　　　readln（n，m）；
+　　　for　i：=n　to　m　do
+　　　　　　if　i=rSum（i）
+　　　　　　　　　then　write（I，' '）；
+end.
+输入：90 120
+
+99 101 111 

@@ -1,0 +1,32 @@
+NOIP2012普及组阅读程序3：
+var
+　　　　n，i，j：　integer；
+　　　　a：　array【1．．100，1．．100】　of　integer；
+function　solve（x，y：integer）：　integer；
+var　u，v：　integer；
+begin
+　　　　if　x　=　n　then
+　　　　begin
+　　　　　　　　solve：=　a【x，y】；
+　　　　　　　　exit；
+　　　　end；
+　　　　u：=　solve（x+1，y）；
+　　　　v：=　solve（x+1，y+1）；
+　　　　if　u>v　then　solve　：=　a【x，y】　+　u
+　　　　else　solve　：=　a【x，y】　+　v；
+end；
+begin
+　　　　read（n）；
+　　　　for　i：=　1　to　n　do
+　　　　　　　　for　j：=1　to　i　do　read（a【i，j】）；
+　　　　writeln（solve（1，1））；
+end．
+输入：
+5
+2
+-1 4
+2 -1 -2
+-1 6 4 0
+3 2 -1 5 8
+
+14

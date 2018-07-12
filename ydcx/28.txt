@@ -1,0 +1,34 @@
+NOIP2005普及组阅读程序4：
+var
+str　：　string；
+len，　i，　j　：　integer；
+nchr　：　array　【0..25】　of　integer；
+mmin　：　char；
+begin
+mmin　：=　'z'；
+readln（str）；　len　：=　length（str）；
+i　：=　len；
+while　i　>=　2　do　begin
+if　str【i　-　1】　<　str　then　break；　dec（i）；
+end；
+if　i　=　1　then　begin
+writeln（'No　result!'）；　exit；
+end；
+for　j　：=　1　to　i　-　2　do　write（str【j】）；
+fillchar（nchr，　sizeof（nchr），　0）；
+for　j　：=　i　to　len　do　begin
+if　（str【j】　>　str【i　-　1】）　and　（str【j】　<　mmin）　then
+mmin　：=　str【j】；
+inc（nchr【ord（str【j】）　-　ord（'a'）】）；
+end；
+dec（nchr【ord（mmin）　-　ord（'a'）】）；
+inc（nchr【ord（str【i　-　1】）　-　ord（'a'）】）；
+write（mmin）；
+for　i　：=　0　to　25　do
+for　j　：=　1　to　nchr　do
+write（chr（i　+　ord（'a'）））；
+writeln；
+end.
+输入：zzyzcccbbbaaa
+
+zzzaaabbbcccy

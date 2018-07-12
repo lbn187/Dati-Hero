@@ -1,0 +1,26 @@
+NOIP2012Ìá¸ß×éÔÄ¶Á³ÌÐò2£º
+var¡¡¡¡
+¡¡
+n,i,ans:integer;¡¡
+
+function¡¡gcd(a,b¡¡:integer)¡¡:¡¡integer;
+begin¡¡
+¡¡if¡¡a¡¡mod¡¡b=0¡¡then¡¡gcd¡¡:=0¡¡else¡¡gcd¡¡:=¡¡gcd(b,a¡¡mod¡¡b);¡¡
+
+end;¡¡
+¡¡
+begin¡¡
+¡¡readln(n);¡¡
+¡¡ans¡¡:=¡¡0;¡¡
+¡¡for¡¡i:=1¡¡to¡¡n¡¡do¡¡¡¡
+¡¡if¡¡gcd(n,i)=i¡¡
+then¡¡ans:=ans+1;¡¡
+¡¡
+¡¡writeln(ans);
+
+end.¡¡
+¡¡
+
+ÊäÈë£º120
+
+16

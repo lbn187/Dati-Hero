@@ -1,0 +1,28 @@
+NOIP2011普及组阅读程序3、提高组阅读程序1：
+const
+　　　　SIZE=100；
+　　　　Var
+　　　　n，i，sum，x：integer；
+a：array【1．．SIZE】　　of　integer；
+　begin
+　　　　readln（n）；
+　　　　fillchar（a，sizeof（a），O）；
+　　　　for　i：=1　to　n　do
+　　　　begin
+　　　　read（x）；
+　　　　inc（a【x】）；
+　　　　end；
+　　　　i：=O；
+　　　　sum：=0；
+　　　　while　sum<（n　div　2　+　1）　　do
+　　　　begin
+　　　　inc（i）；
+　　　　sum：=sum+a【i】；
+　　　　end；
+writeln（i）；
+end．
+输入：
+11
+4 5 6 6 4 3 3 2 3 2 1
+
+3

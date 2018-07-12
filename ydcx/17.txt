@@ -1,0 +1,18 @@
+NOIP2003普及组阅读程序3：
+program　Program3；
+Var
+　a，b，c，d，sum：longint；
+begin
+　read　（a，b，c，d）；
+　a：=a　mod　23：
+　b：=b　mod　28；
+　c：=c　mod　33；
+　sum：=a*5544+b*14421+c*1288-d；
+　sum：=sum+21252；
+　sum：=sum　mod　21252；
+　if　（sum=0）then　sum：=21252；
+　writeln（sum）；
+end．　
+输入：283 102 23 320
+
+8910

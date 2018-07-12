@@ -1,0 +1,27 @@
+NOIP2006普及组阅读程序4：
+program　ex304；　
+var　
+x，x2：longint；　
+procedure　digit（n，m：longint）；　
+var　n2：integer；　
+begin　
+if（m>0）　then　
+begin　
+n2：=n　mod　10；　
+write（n2：2）；　
+if（m>1）　then　digit（n　div　10，m　div　10）；　
+n2：=n　mod　10；　
+write（n2：2）；　
+end；　
+end；　
+begin　
+writeln（'Input　a　number：'）；　
+readln（x）；　
+x2：=1；　
+while（x2<x）　do　x2：=x2*10；　
+x2：=x2　div　10；　
+digit（x，x2）；　
+end.　
+输入：9734526　
+
+ 6 2 5 4 3 7 9 9 7 3 4 5 2 6

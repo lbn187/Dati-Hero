@@ -1,0 +1,24 @@
+NOIP2002普及组阅读程序1：
+program　exp1；
+var　i，j，k，n，，L0，L1，LK：Integer；
+     a　：array　【0..20】　of　integer；
+begin
+  readln（n，k）；
+  for　i：=0　to　n-1　do　a【i】：=i+1；
+  a【n】：=a【n-1】；L0：=n-1；　Lk：=n-1；
+  for　I：=1　to　n-1　do
+    begin
+　    L1：=L0-k；　if　（l1<0）　then　L1：=L1+n；
+      If　（l1=Lk）　then　begin
+　　　A【L0】：=a【n】；　Lk：=Lk-1；　a【n】：=a【Lk】；　l0：=lk
+　　　End Else
+　    Begin
+　　　A【l0】：=a【l1】；l0：=l1；
+      End；
+    End；
+  A【L0】：=a【n】；
+  For　I：=0　to　n-1　do　write（a【I】：4）；
+End.
+输入：10 4
+
+   7   8   9  10   1   2   3   4   5   6

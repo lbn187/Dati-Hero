@@ -1,0 +1,16 @@
+NOIP1998普及组阅读程序1：
+Program　　exp1　　（imput，output）；
+Var　　i，s，max：integer；
+　　　 a：array　【1..10】　　of　　integer；
+begin　
+　for　i：=1　to　10　　do　　　read　（a【i】）；
+　max：=a【1】　；s：=a【1】；
+　for　i：=2　　to　　10　　do　
+　begin　
+　　if　　s<0　　then　　s：=0；　　　　　　　　　s：=　s+a【i】；　　　　　　　　　　　　　if　s>max　　then　　max：=s；
+　end；
+　writeln（max）；
+end.　　
+输入：-2 13 -1 4 7 8 -1 -18 24 6
+
+42

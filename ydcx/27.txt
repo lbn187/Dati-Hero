@@ -1,0 +1,18 @@
+NOIP2005普及组阅读程序3：
+var
+a，　b，　c，　p，　q　：　integer；
+r　：　array【0..2】　of　integer；
+begin
+read（a，　b，　c）；
+p　：=　a　div　b　div　c；
+q　：=　b　-　c　+　a　+　p；
+r【0】　：=　a　*　p　div　q　*　q；
+r【1】　：=　r【0】　*　（r【0】　-　300）；
+if　（3　*　q　-　p　mod　3　<=　r【0】）　and　（r【2】　=　r【2】）　then
+r【1】　：=　r【r【0】　div　p　mod　2】
+else　r【1】　：=　q　mod　p；
+writeln（r【0】　-　r【1】）；
+end.
+输入：100 7 3
+
+-7452

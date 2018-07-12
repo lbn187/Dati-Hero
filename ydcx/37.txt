@@ -1,0 +1,25 @@
+NOIP2008普及组阅读程序1：
+var　
+i，a，b，c，d：integer；　
+f：array【0..3】　of　integer；　
+begin　
+for　i：=0　to　3　do　
+read（f【i】）；　
+a：=f【0】+f【1】+f【2】+f【3】；　
+a：=a　div　f【0】；　
+b：=f【0】+f【2】+f【3】；　
+c：=（b*f【1】+a）　div　f【2】；　
+d：=f【（b　div　c）　mod　4】；　
+if　（f【（a+b+c+d）　mod　4】>f【2】）　then　
+begin　
+a：=a+b；　
+writeln（a）　
+end　else　
+begin　
+c：=c+d；　
+writeln（c）；　
+end；　
+end.　
+输入：9 19 29 39　
+
+23

@@ -1,0 +1,38 @@
+NOIP2011Ìá¸ß×éÔÄ¶Á³ÌÐò4£º
+const
+¡¡SIZE = 10000;
+¡¡LENGTH = 10;
+var
+¡¡sum : longint;
+¡¡n,m,I,j : integer;
+¡¡a:array[1..SIZE , 1..LENGTH]of integer;
+function h(u , v :integer):integer;
+var
+¡¡ans,i : integer;
+begin
+¡¡ans:=0;
+¡¡for i:=1 to n do
+¡¡if a[u][i] <> a[v][i] then¡¡inc(ans);
+¡¡h := ans;
+end;
+begin
+¡¡readln(n);
+¡¡fillchar(a,sizeof (a),0);
+¡¡m:=1;
+¡¡repeat
+¡¡¡¡i := 1;
+¡¡¡¡while (i <=n) and (a[m][i] =1 ) do¡¡inc(i);
+¡¡¡¡if i>n then¡¡break;
+¡¡¡¡a[m][i]:=1;
+¡¡¡¡for j:=i + 1 to n do
+¡¡¡¡¡¡a[m][j] := a[m-1][j];
+¡¡until false;
+¡¡sum := 0;
+¡¡for i := 1 to m do
+¡¡¡¡for j := 1 to m do
+¡¡¡¡¡¡sum := sum + h(i,j);
+¡¡writeln(sum);
+end.
+ÊäÈë£º7
+
+57344

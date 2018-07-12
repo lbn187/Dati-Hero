@@ -1,0 +1,29 @@
+NOIP2012ÆÕ¼°×éÔÄ¶Á³ÌÐò4£º
+var
+¡¡¡¡¡¡¡¡n£¬ans£¬i£¬j£º¡¡integer£»
+¡¡¡¡¡¡¡¡s£º¡¡string£»
+Function¡¡get£¨i£º¡¡integer£©¡¡£º¡¡char£»
+begin
+¡¡¡¡¡¡¡¡if¡¡i<=¡¡n¡¡then¡¡get£º=¡¡s¡¾i¡¿
+¡¡¡¡¡¡¡¡else¡¡get£º=s¡¾i-n¡¿£»
+end£»
+begin
+¡¡¡¡¡¡¡¡readln£¨s£©£»
+¡¡¡¡¡¡¡¡n£º=¡¡length¡¡£¨s£©£»
+¡¡¡¡¡¡¡¡ans£º=¡¡1£»
+¡¡¡¡¡¡¡¡for¡¡i£º=¡¡2¡¡to¡¡n¡¡do
+¡¡¡¡¡¡¡¡begin
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡for¡¡j£º=0¡¡to¡¡n-1¡¡do
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡if¡¡get£¨i+j£©¡¡<¡¡get£¨ans+j£©¡¡then
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡begin
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ans£º=i£»
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡break£»
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡end
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡else¡¡if¡¡get£¨i+j£©>¡¡get£¨ans+j£©¡¡then¡¡break£»
+¡¡¡¡¡¡¡¡end£»
+¡¡¡¡¡¡¡¡for¡¡j£º=0¡¡to¡¡n-1¡¡do¡¡write£¨get£¨ans+j£©£©£»
+¡¡¡¡¡¡¡¡writeln£»
+end£®
+ÊäÈë£ºCBBADADA
+
+ACBBADAD

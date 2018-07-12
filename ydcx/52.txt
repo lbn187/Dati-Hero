@@ -1,0 +1,12 @@
+NOIP2012普及组阅读程序1：
+var　a，b，c，d，e，ans：　integer；
+begin
+　　　　readln（a，b，c）；
+　　　　d：=a+b；
+　　　　e：=b+c；
+　　　　ans：=d+e；
+　　　　writeln（ans）；
+end．
+输入：1 2 5
+
+10

@@ -1,0 +1,21 @@
+NOIP2002普及组阅读程序3：
+Pmgram　exp3；
+Var　I，j，p，n，q，s：integer；
+     a　：array【1..20】of　integer；
+begin
+  readln（p，n，q）；j　：=21；
+  while　（n>0）do　
+    begin
+    j：=j-1；a【j】：=n　mod　10；n：=n　div　10；
+    end；
+  s：=0；
+  for　i：=j　t0　20　do　s：=s*p+a【i】；
+  writeln（s）；j　：=21；
+  while　（s>O）do
+  begin　j：=j-1；a【j】：=s　mod　q；s：=s　div　q；end；
+  for　i：=j　to　20　do　write（a【i】）；
+end.
+输入：7 3051 8
+
+1065
+2051

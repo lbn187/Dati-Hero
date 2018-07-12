@@ -1,0 +1,38 @@
+NOIP2000普及组阅读程序2：
+PROGRAM　NOI_004；
+VAR　　　I，J，J1，J2，P，Q：INTEGER；
+　　　 　P1：BOOLEAN；
+　　　　 B，C：ARRAY【1..100】　OF　INTEGER；
+BEGIN
+　READLN（Q，P）；
+  J：=1；　　
+  P1：=TRUE；　　　　　
+  B【J】：=Q；　　
+  J1：=0；
+　WHILE　　（Q>0）　AND　　P1　DO
+　　BEGIN
+　　　J1：=J1+1；　　
+      C【J1】：=Q*10　DIV　P；　　
+      Q：=Q*10-C【J1】*P；
+　　　IF　Q>0　THEN　　BEGIN　
+　　　　J2：=1；
+　　　  WHILE　（B【J2】<>Q）AND（J2<=J）DO  J2：=J2+1；
+　　　　IF　B【J2】=Q　THEN　
+　　　　　BEGIN　
+　　　　　　P1：=FALSE；　　WRITE（'0.'）；
+　　　　　　FOR　I：=1　TO　J2-1　DO　　　　WRITE（C【I】：1）；
+　　　　　　WRITE（'{'）；
+　　　　　　FOR　I：=J2　TO　J1　DO　　　WRITE（C【I】：1）；
+　　　　　　WRITE（'}'）
+　　　　  END
+　　　　　ELSE　　　BEGIN　　　J：=J+1；　　B【J】：=Q　　　END
+　　  END
+　　END；
+　IF　Q=0　THEN　BEGIN
+　　WRITE（'0.'）；
+　　FOR　I：=1　TO　J1　DO　　　WRITE（C【I】：1）；
+　END；
+END.　　　　　　　
+输入：2　7
+
+0.{285714}

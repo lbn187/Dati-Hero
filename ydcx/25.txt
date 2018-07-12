@@ -1,0 +1,18 @@
+NOIP2005普及组阅读程序1：
+var
+a，　b　：　integer；
+begin
+read（a）；
+b　：=　（a　*　（a　*　a））　+　1；
+if　b　mod　3　=　0　then　b　：=　b　div　3；
+if　b　mod　5　=　0　then　b　：=　b　div　5；
+if　b　mod　7　=　0　then　b　：=　b　div　7；
+if　b　mod　9　=　0　then　b　：=　b　div　9；
+if　b　mod　11　=　0　then　b　：=　b　div　11；
+if　b　mod　13　=　0　then　b　：=　b　div　13；
+if　b　mod　15　=　0　then　b　：=　b　div　15；
+writeln（（100　*　a　-　b）　div　2）；
+end.
+输入：10
+
+499

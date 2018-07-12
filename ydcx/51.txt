@@ -1,0 +1,24 @@
+NOIP2011普及组阅读程序4：
+Var
+　　　　n，m：integer；
+　　function　solve（n，m：integer）：integer；
+　　Var　
+　　　　i，sum：integer；
+　　begin
+　　　　if　m=1　　then
+　　　　begin
+　　　　solve：=1；
+　　　　exit；
+　　　　end；
+　　　　sum：=O；
+　　　　for　i：=1　to　n-1　do
+　　　　sum：=sum+solve（i，m-1）；
+solve：=sum；　
+end；　
+begin
+　　　　readln（n，m）；
+writeln（solve（n，m））；　
+end．
+输入：7 4
+
+20

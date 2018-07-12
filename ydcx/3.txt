@@ -1,0 +1,21 @@
+NOIP1998ÆÕ¼°×éÔÄ¶Á³ÌÐò3£º
+Program¡¡¡¡exp3¡¡£¨input£¬output£©£»¡¡¡¡¡¡¡¡¡¡
+Const¡¡¡¡N=10£»
+Var¡¡
+¡¡S£¬I¡¡£º¡¡integer£»
+Function¡¡¡¡CO£¨I1£ºinteger£©¡¡£º¡¡integer£»
+VAR¡¡J1£¬S1¡¡£º¡¡integer£»¡¡¡¡¡¡¡¡¡¡¡¡
+Begin¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+  S1£º=N£»
+¡¡For¡¡J1£º=¡¡£¨N-1£©¡¡¡¡downto¡¡¡¡£¨N-I1+1£©¡¡¡¡do¡¡¡¡¡¡¡¡¡¡¡¡
+¡¡S1£º=¡¡S1*J1¡¡¡¡div¡¡¡¡£¨N-J1+1£©£»¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+  CO£º=S1
+End£»
+Begin¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+  S£º=N+1£»
+  For¡¡I£º=¡¡2¡¡¡¡to¡¡¡¡N¡¡¡¡do¡¡¡¡
+    S£º=S¡¡+¡¡CO£¨I£©£»
+  Writeln£¨S£©£»
+End.
+
+1024

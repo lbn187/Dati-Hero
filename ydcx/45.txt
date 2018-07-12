@@ -1,0 +1,27 @@
+NOIP2010普及组阅读程序1：
+var
+　a1，a2，a3，x：integer；
+procedure　swap（var　a，b：integer）；
+var　
+　t：integer；
+begin
+　t：=a；a：=b；b：=t；
+end；　
+begin
+　readln（a1，a2，a3）；
+　if　a1>a2　then swap（a1，a2）；
+　if　a2>a3　then swap（a2，a3）；
+　if　a1>a2　then swap（a1，a2）；
+　readln（x）；
+　if　x<a2　then
+　if　x<a1　then writeln（x，‘ ’，a1，‘ ’，a3，‘ ’，a3） 
+            else writeln（a1，‘ ’，x，‘ ’，a2，‘ ’，a3）
+  else
+  if　x<a3　then writeln（a1，‘ ’，a2，‘ ’，x，‘ ’，a3）
+　　　　　　else writeln（a1，‘ ’，a2，‘ ’，a3，‘ ’，x）
+end.
+输入：
+91 2 20
+77
+
+2 20 77 91

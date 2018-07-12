@@ -1,0 +1,14 @@
+NOIP2008普及组阅读程序2：
+procedure　foo（a，b，c：integer）；　
+begin　
+  if　a>b　then　foo（c，a，b）　
+  else　writeln（a，','，b，','，c）　
+end；　
+var　a，b，c：integer；　
+begin　
+readln（a，b，c）；　
+foo（a，b，c）；　
+end.　
+输入：2 1 3　
+
+2,3,1

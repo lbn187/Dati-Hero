@@ -1,0 +1,12 @@
+NOIP2001ÆÕ¼°×éÔÄ¶Á³ÌÐò1£º
+PROGRAM¡¡CHU7_1£»
+FUNCTION¡¡FUN£¨X£ºINTEGER£©£ºINTEGER£»
+¡¡BEGIN
+¡¡¡¡IF£¨X=0£©OR£¨X=1£©THEN¡¡FUN£º=3
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ELSE¡¡FUN£º=X-FUN£¨X-2£©
+¡¡END£»
+BEGIN
+¡¡WRITELN£¨FUN£¨9£©£©£»
+END.
+
+7

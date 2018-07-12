@@ -1,0 +1,21 @@
+NOIP2006普及组阅读程序1：
+Program　ex301；　
+var　
+u：array【0..3】　of　integer；　
+i，a，b，x，y：integer；　
+begin　
+y：=10；　
+for　i：=0　to　3　do　
+read（u【i】）；　
+a：=（u【0】+u【1】+u【2】+u【3】）　div　7；　
+b：=u【0】　div　（（u【1】-u【2】）　div　u【3】）；　
+x：=（u【0】+a+2）-u【（u【3】+3）　mod　4】；　
+if　（x>10）　then　
+y：=y+（b*100-u【3】）　div　（u【u【0】　mod　3】*5）　
+else　
+y：=y+20+（b*100-u【3】）　div　（u【u【0】　mod　3】*5）；　
+writeln　（x，','，y）；　
+end.　{*注：本例中，给定的输入数据可以避免分母为0或下标越界。　}　
+输入：9 3 9 4
+
+10,10

@@ -1,0 +1,27 @@
+NOIP2008普及组阅读程序4：
+prodecure　solve（first：string；spos_f，epos_f：integer；mid：string；spos_m，epos_m：integer）；　
+var　i，root_m：integer；　
+begin　
+  if　spos_f　>　epos_f　the　nexit；　
+  for　i：=spos_m　to　epos_m　do　
+  if　first【spos_f】　=　mid　then　begin　
+    root【m】：=i；　
+    break；　
+  end；　
+  solve（first，spos_s+1，spos_f+（root_m-spos_m），mid，spos_m，root_m-1）；　
+  solve（first，spos_f+（root_m-spos_m）+1，epos_f，mid，root_m+1，epos_m）；　
+  write（first【spos_f】）；　
+end；　
+var　first，mid：string；　
+len：integer；　
+begin　
+  readln（len）；　
+  readln（first）；　
+  readln（mid）；　
+  solve（first，1，len，mid，1，len）；　　
+end.　
+输入：7
+ABDCEGF
+BDAGECF
+
+DBGEFCA

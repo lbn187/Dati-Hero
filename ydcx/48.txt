@@ -1,0 +1,17 @@
+NOIP2011普及组阅读程序1：
+Var
+n，m，I，ans：integer；
+begin
+　　　　readln（n，m）；
+　　　　ans：=O；
+　　　　i：=n；
+　　　　while　i<=m　d0
+　　　　begin
+　　　　ans：=ans+i；
+　　　　inc（i）；
+　　　　end；
+writeln（ans）；　
+end．
+输入：10 20
+
+165

@@ -1,0 +1,25 @@
+NOIP2007ÆÕ¼°×éÔÄ¶Á³ÌÐò3£º
+program¡¡j303£»
+var¡¡a1£ºarray¡¾1..50¡¿¡¡of¡¡integer£»
+var¡¡i£¬j£¬t£¬t2£¬n£¬n2£ºinteger£»
+begin
+n£º=50£»
+for¡¡i£º=1¡¡to¡¡n¡¡do¡¡a1£º=0£»
+n2£º=round£¨sqrt£¨n£©£©£»
+for¡¡i£º=2¡¡to¡¡n2¡¡do
+if¡¡£¨a1=0£©¡¡then
+begin
+t2£º=n¡¡div¡¡i£»
+for¡¡j£º=2¡¡to¡¡t2¡¡do¡¡a1¡¾i*j¡¿£º=1£»
+end£»
+t£º=0£»
+for¡¡i£º=2¡¡to¡¡n¡¡do
+if¡¡£¨a1=0£©¡¡then
+begin
+write£¨i£º4£©£»¡¡inc£¨t£©£»
+if¡¡£¨t¡¡mod¡¡10=0£©¡¡then¡¡writeln£»
+end£»
+end.
+
+   2   3   5   7  11  13  17  19  23  29 
+  31  37  41  43  47

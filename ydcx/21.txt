@@ -1,0 +1,19 @@
+NOIP2004提高组阅读程序1：
+program　progam1；
+var
+  u：array　【0..3】of　integer；
+  a，b，c，x，y，z：integer；
+begin
+read（u【0】，u【1】，u【2】，u【3】）；
+a：=u【0】+u【1】+u【2】+u【3】-5；
+b：=u【0】*（u【1】-u【2】div　u【3】+8）；
+c：=u【0】*u【1】　div　u【2】*u【3】；
+x：=（a+b+2）*3-【（c+3）mod 4】；
+y：=（c*100-13 div　a　div　（u【b  mod　3】*5）；
+if（（x+y）mod　2=0）　then　z：=（a+b+c+x+y）div　2；
+z：=（a+b+c–x-y）　*　2；
+writeln（x+y-z）；
+end.
+输入：2　5　7　4
+
+263

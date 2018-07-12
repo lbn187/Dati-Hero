@@ -1,0 +1,14 @@
+NOIP2009普及组阅读程序1：
+var
+  a，b：integer；
+function　work（a，b：integer）：integer；
+begin
+  if　a　mod　b<>0　then work：=work（b，a　mod　b）else work：=　b；
+end；
+begin
+  read（a，b）；
+  writeln（work（a，b））；
+end.
+输入：20 12
+
+4

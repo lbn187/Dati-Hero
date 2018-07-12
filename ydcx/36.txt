@@ -1,0 +1,50 @@
+NOIP2007普及组阅读程序4：
+Program　j304；
+Type　str1=string【100】；
+      Str2=string【200】；
+Var
+  S1：str1；　s2：str2；
+Function　isalpha（c：char）：Boolean；
+Var　i：integer；
+Begin
+  i：=ord（c）；
+  if（（i>=65）and（i<=90））or（（i>=97）and（i<=122））then  isalpha：=true
+  else　isalpha：=false；
+end；
+function　isdigit（c：char）：Boolean；
+var　i：integer；
+begin
+  i：=ord（c）；
+  if　（i>=48）　and　（i<=57）　then　isdigit：=true
+  else　isdigit：=false；
+end；
+procedure　expand（s1：str1；var　s2：str2）；
+var　i，j：integer；　a，b，c：char；
+begin
+  j：=1；　c：=char（1）；　i：=0；
+  while　（i<=ord（s1【0】））　do
+  begin　
+    inc（i）；　c：=s1；
+    if　c='-'　then　begin
+      a：=s1【i-1】；　b：=s1【i+1】；
+      if（isalpha（a）and　isalpha（b））or（isdigit（a）and　isdigit（b））then　      begin
+        dec（j）；
+        while　（ord（upcase（a））<ord（upcase（s1【i+1】）））　do
+        begin
+        s2【j】：=a；　inc（j）；　inc（a）；　
+        end；
+      end else
+      begin　s2【j】：=c；　inc（j）；　end；
+    end else　
+    begin　s2【j】：=c；　inc（j）；　end；　
+  end；　
+  s2【0】：=char（j-2）；　
+end；
+begin　
+  readln（s1）；　
+  expand（s1，s2）；　
+  writeln（s2）；
+end.
+输入：wer2345d-h454-82qqq
+
+wer2345defgh45456782qqq

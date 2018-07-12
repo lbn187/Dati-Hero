@@ -1,0 +1,15 @@
+NOIP2007ÆÕ¼°×éÔÄ¶Á³ÌÐò2£º
+program¡¡j302£»
+var¡¡a£¬b£ºinteger£»
+var¡¡x£¬y£º^integer£»
+procedure¡¡fun£¨a£¬b£ºinteger£©£»
+var¡¡k£ºinteger£»
+begin¡¡k£º=a£»¡¡a£º=b£»¡¡b£º=k£»¡¡end£»
+begin
+a£º=3£»¡¡b£º=6£»
+x£º=@a£»¡¡y£º=@b£»
+fun£¨x^£¬y^£©£»
+writeln£¨a£¬','£¬b£©£»
+end.
+
+3,6

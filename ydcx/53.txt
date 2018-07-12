@@ -1,0 +1,12 @@
+NOIP2012普及组阅读程序2：
+var　n，i，ans：　integer；
+begin
+　　　　readln（n）；
+　　　　ans：=　0；
+　　　　for　i：=　1　to　n　do
+　　　　　　　　if　（n　mod　i）=　0　then　ans　：=　ans+1；
+　　　　writeln（ans）；
+end．
+输入：18
+
+6

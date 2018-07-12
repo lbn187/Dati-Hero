@@ -1,0 +1,23 @@
+NOIP2004提高组阅读程序4：
+program　program4；
+const
+	u：　array【0..2】　of　integer　=　（1，　-3，　2）；
+	v：　array【0..1】　of　integer　=　（-2，　3）；
+var
+	i，　n，　sum：　integer；
+function　g（n：　integer）：　integer；
+var　i，　sum：　integer；
+begin
+	sum　：=　0；
+	for　i　：=　1　to　n　do　inc（sum，　u【i　mod　3】　*　i）；
+	g　：=　sum；
+end；
+begin
+	sum　：=　0；
+	read（n）；
+	for　i　：=　1　to　n　do　inc（sum，　v【i　mod　2】　*　g（i））；
+	writeln（sum）；
+end.
+输入：103
+
+-400
