@@ -1,0 +1,3 @@
+NOIP2000提高组问题求解1：
+已知一棵二叉树的结点名为大写英文字母，其中序与后序遍历的顺序分别为：CBGEAFHDIJ与CGEBHFJIDA则该二叉树的先序遍历的顺序为：
+ABCEGDFHIJ
