@@ -1,0 +1,5 @@
+133.在 Linux 下建立目录使用的命令是_______
+mkdir
+cd
+mknew
+cp

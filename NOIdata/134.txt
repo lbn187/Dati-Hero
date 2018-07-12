@@ -1,0 +1,5 @@
+134. NOI 比赛中提供的 Pascal IDE 环境除了 GUIDE 之外,还有_______
+Lazarus
+Turbo 
+Notepad++
+Anjuta
