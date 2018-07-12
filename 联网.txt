@@ -1,0 +1,109 @@
+{procedure x10;
+var
+  bj:text;
+  yh2,nc2:ansistring;
+  x,jb2,dj2,jy2:longint;
+  f,ff:boolean;
+  mynumber2:ansistring;
+begin
+  clrscr;
+  writeln('正在匹配中，请稍候。。。');
+  ff:=false;
+  assign(bj,'对战.txt');reset(bj);
+  readln(bj,x);
+  if x=1 then readln(bj,mynumber2);
+  close(bj);
+  if x=1 then begin
+  assign(bj,'对战.txt');rewrite(bj);
+  writeln(bj,0);
+  writeln(bj,mynumber);close(bj);
+  ff:=true;
+  end;
+  if x=0 then begin
+  assign(bj,'对战.txt');rewrite(bj);
+  writeln(bj,1);writeln(bj,mynumber);close(bj);
+  repeat
+    delay(500);
+    f:=false;
+    assign(bj,'对战.txt');reset(bj);
+    readln(bj,x);if x=0 then f:=true;
+    if x=0 then readln(bj,mynumber2);
+    close(bj);
+  until f=true;
+  end;
+  assign(bj,mynumber2);reset(bj);
+  readln(bj,yh2);readln(bj,sss);readln(bj,sss);readln(bj,nc2);
+  for i:=1 to 6 do readln(bj,sss);readln(bj,jb2);readln(bj,jy2);readln(bj,dj2);close(bj);
+  writeln('匹配成功，你的对手是',yh2,'(',nc2,')');
+  writeln('用户名：',name:30,'  ',yh2);
+  writeln('金  币：',gold:30,'  ',jb2);
+  writeln('等  级：',level:30,'  ',dj2);
+  writeln('经  验：',exp:30,'  ',jy2);
+  writeln('正在加载数据，请稍候');
+  delay(2000);
+ { if ff=true then writeln('轮到你答题了');
+  zql:=0.0;dtans:=0.0;c:=' ';inc(e);f:=false;clrscr;x:=random(284)+1;
+  str(x,s1);s1:='data/'+s1+'.txt';
+  assign(pp,s1);reset(pp);
+  for w:=0 to 5 do
+    begin readln(pp,ss);s[w]:=ss;end;
+  close(pp);
+  str(x,s1);s1:='time2/'+s1;
+  assign(pp,s1);reset(pp);readln(pp,rans);readln(pp,wans);readln(pp,tans);close(pp);
+  y:=random(24)+1;da:=1;
+  if y=2 then begin ss:=s[3];s[3]:=s[4];s[4]:=ss;end;if y=3 then begin ss:=s[2];s[2]:=s[3];s[3]:=ss;end;
+  if y=4 then begin ss:=s[2];s[2]:=s[3];s[3]:=s[4];s[4]:=ss;end;if y=5 then begin ss:=s[2];s[2]:=s[4];s[4]:=s[3];s[3]:=ss;end;
+  if y=6 then begin ss:=s[2];s[2]:=s[4];s[4]:=ss;end;if y=7 then begin ss:=s[1];s[1]:=s[2];s[2]:=ss;da:=2;end;
+  if y=8 then begin ss:=s[1];s[1]:=s[2];s[2]:=ss;ss:=s[3];s[3]:=s[4];s[4]:=ss;da:=2;end;if y=9 then begin ss:=s[1];s[1]:=s[2];s[2]:=s[3];s[3]:=ss;da:=3;end;
+  if y=10 then begin ss:=s[1];s[1]:=s[2];s[2]:=s[3];s[3]:=s[4];s[4]:=ss;da:=4;end;if y=11 then begin ss:=s[1];s[1]:=s[2];s[2]:=s[4];s[4]:=s[3];s[3]:=ss;da:=3;end;
+  if y=12 then begin ss:=s[1];s[1]:=s[2];s[2]:=s[4];s[4]:=ss;da:=4;end;if y=13 then begin ss:=s[1];s[1]:=s[3];s[3]:=s[2];s[2]:=ss;da:=2;end;
+  if y=14 then begin ss:=s[1];s[1]:=s[3];s[3]:=s[4];s[4]:=s[2];s[2]:=ss;da:=2;end;if y=15 then begin ss:=s[1];s[1]:=s[3];s[3]:=ss;da:=3;end;
+  if y=16 then begin ss:=s[1];s[1]:=s[3];s[3]:=s[4];s[4]:=ss;da:=4;end;if y=17 then begin ss:=s[1];s[1]:=s[3];s[3]:=ss;ss:=s[2];s[2]:=s[4];s[4]:=ss;da:=3;end;
+  if y=18 then begin ss:=s[1];s[1]:=s[3];s[3]:=s[2];s[2]:=s[4];s[4]:=ss;da:=4;end;if y=19 then begin ss:=s[1];s[1]:=s[4];s[4]:=s[3];s[3]:=s[2];s[2]:=ss;da:=2;end;
+  if y=20 then begin ss:=s[1];s[1]:=s[4];s[4]:=s[2];s[2]:=ss;da:=2;end;if y=21 then begin ss:=s[1];s[1]:=s[4];s[4]:=s[3];s[3]:=ss;da:=3;end;
+  if y=22 then begin ss:=s[1];s[1]:=s[4];s[4]:=ss;da:=4;end;if y=23 then begin ss:=s[1];s[1]:=s[4];s[4]:=s[2];s[2]:=s[3];s[3]:=ss;da:=3;end;
+  if y=24 then begin ss:=s[1];s[1]:=s[4];s[4]:=ss;ss:=s[2];s[2]:=s[3];s[3]:=ss;da:=4;end;
+  gotoxy(1,5);textcolor(tmys);writeln(s[0]);ans:=length(s[0]) div 78;textcolor(xuanxiang);gotoxy(1,6+ans);
+  write('A.');writeln(s[1]);write('B.');writeln(s[2]);write('C.');writeln(s[3]);write('D.');writeln(s[4]);textcolor(qtzt);
+  assign(pp,mynumber);reset(pp);
+  for i:=1 to 13 do readln(pp,asus[i]);
+  close(pp);
+  val(asus[13],dengji);
+  mm:=dati+dengji*50;
+  repeat
+  mm:=mm-1;delay(10);gotoxy(1,1);textcolor(sjys);write('剩余时间：');write(mm div 100,':');if mm mod 100<10 then write(0);write(mm mod 100);textcolor(qtzt);
+  write('      你已经连续答对',e-1,'题');gotoxy(1,2);if (rans+wans>0)then begin zql:=(wans/(rans+wans)*100);dtans:=(tans/(rans+wans)/100);end;
+  writeln('答对此题人数：',wans,'  答错此题人数：',rans,'  正确率：',zql:0:2,'%  平均答题时间：',dtans:0:2,'秒');
+  writeln('你的金币：',gold,'  经验：',exp,' 等级：',dengji);
+  writeln('------------------------------------------------------------------------------');keypressed;
+  if keypressed then begin c:=readkey;end;if ord(c)=27 then halt;
+  if c='q' then begin f3:=false;exit;end;
+  until (c='a')or(c='b')or(c='c')or(c='d')or(c='A')or(c='B')or(c='C')or(c='D')or(mm=0);
+  gotoxy(1,10+ans);write('正确答案是：');
+  if da=1 then writeln('A');if da=2 then writeln('B');if da=3 then writeln('C');if da=4 then writeln('D');
+  if (c='a')or(c='A') then if da=1 then begin writeln('恭喜你答对了');  gold:=gold+5;exp:=exp+5;inc(rig);gotoxy(1,12+ans); writeln('金币+5，经验+5');end else begin
+writeln('很遗憾你答错了');inc(wro);gotoxy(1,6+ans);textbackground(cuowu);write('A.');writeln(s[1]);textbackground(black);ee:=e;e:=0;f3:=false;  gold:=gold-5;
+exp:=exp-5;gotoxy(1,12+ans);writeln('金币-5，经验-5');end;
+  if (c='b')or(c='B') then if da=2 then begin writeln('恭喜你答对了'); gold:=gold+5;exp:=exp+5;inc(rig);gotoxy(1,12+ans); writeln('金币+5，经验+5');end else begin
+writeln('很遗憾你答错了');inc(wro);gotoxy(1,7+ans);textbackground(cuowu);write('B.');writeln(s[2]);textbackground(black);ee:=e;e:=0;f3:=false;  gold:=gold-5;
+exp:=exp-5;gotoxy(1,12+ans);writeln('金币-5，经验-5');end;
+  if (c='c')or(c='C') then if da=3 then begin writeln('恭喜你答对了'); gold:=gold+5;exp:=exp+5;inc(rig);gotoxy(1,12+ans); writeln('金币+5，经验+5');end else begin
+writeln('很遗憾你答错了');inc(wro);gotoxy(1,8+ans);textbackground(cuowu);write('C.');writeln(s[3]);textbackground(black);ee:=e;e:=0;f3:=false;  gold:=gold-5;
+exp:=exp-5;gotoxy(1,12+ans);writeln('金币-5，经验-5');end;
+  if (c='d')or(c='D') then if da=4 then begin writeln('恭喜你答对了'); gold:=gold+5;exp:=exp+5;inc(rig);gotoxy(1,12+ans); writeln('金币+5，经验+5');end else begin
+writeln('很遗憾你答错了');inc(wro);gotoxy(1,9+ans);textbackground(cuowu);write('D.');writeln(s[4]);textbackground(black);ee:=e;e:=0;f3:=false;  gold:=gold-5;
+exp:=exp-5;gotoxy(1,12+ans);writeln('金币-5，经验-5');end;
+  if mm=0 then begin writeln('时间到，你没有做出选择');ee:=e;e:=0;f3:=false;gold:=gold-5;exp:=exp-5;gotoxy(1,12+ans);writeln('金币-5，经验-5');inc(wro);end;
+  gotoxy(1,5+da+ans);textbackground(zhengque);
+  if da=1 then write('A.');if da=2 then write('B.');if da=3 then write('C.');if da=4 then write('D.');writeln(s[da]);
+  textbackground(black);tans:=tans+2000-mm;if f3=true then rans:=rans+1 else wans:=wans+1;
+  assign(pp,s1);rewrite(pp);writeln(pp,rans);
+  writeln(pp,wans);
+  writeln(pp,tans);close(pp);
+  if exp>lev[level] then up;
+  assign(pp,mynumber);rewrite(pp);
+  for i:=1 to 10 do
+  writeln(pp,asus[i]);
+  writeln(pp,gold);writeln(pp,exp);writeln(pp,level);close(pp);
+  assign(pp,ttt2);rewrite(pp);writeln(pp,rig,' ',wro,' ',rec);close(pp);delay(tlsj);}
+end;}
