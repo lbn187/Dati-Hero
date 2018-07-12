@@ -1,0 +1,5 @@
+67. 在NOI考试中，Pascal 源文件的扩展名规定为:
+pas
+无所谓
+lpr
+PAS

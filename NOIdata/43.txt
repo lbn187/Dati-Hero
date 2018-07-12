@@ -1,0 +1,5 @@
+43. 下列哪条命令可以为自己的程序创建一个备份:
+cp my.c mybak
+mv my.c my.bak
+cat my.c my.bak 
+echo my.c my.bak

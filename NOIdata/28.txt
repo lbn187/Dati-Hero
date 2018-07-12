@@ -1,0 +1,5 @@
+28. 在 NOI Linux 中默认使用的 Shell 是:
+bash
+ksh
+csh 
+busybox

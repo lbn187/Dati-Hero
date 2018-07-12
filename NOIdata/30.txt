@@ -1,0 +1,5 @@
+30. 在 Linux 中如何查看进程的 CPU 利用率:
+ps
+free 
+ifconfig 
+cpuinfo

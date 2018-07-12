@@ -1,0 +1,5 @@
+9. Linux 系统中杀死名为 test 的后台进程的命令是:
+killall test 
+kill test
+kill -9 test 
+kill -1 test

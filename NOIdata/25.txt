@@ -1,0 +1,5 @@
+25. Linux 系统中具有最高权限的用户是:
+root
+Admin
+Administrator
+supervisor

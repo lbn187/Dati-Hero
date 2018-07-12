@@ -1,0 +1,5 @@
+29. 在 Linux 中查看当前系统中的进程使用的命令是:
+ps
+free 
+ifconfig 
+ls

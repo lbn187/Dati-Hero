@@ -1,0 +1,5 @@
+35. 在 Linux 系统中,下列哪个命令可以查看文件的大小:
+ls –l 
+ls –a
+ls –R 
+ls –d

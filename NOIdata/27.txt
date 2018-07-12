@@ -1,0 +1,5 @@
+27. 在 NOI Linux 中,从字符控制台切换回桌面环境使用的快捷键是:
+Ctrl+Alt+F7
+Ctrl+F1 
+Ctrl+F7 
+Alt+F1 

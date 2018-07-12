@@ -1,0 +1,5 @@
+1. NOI 机试使用的操作系统是:
+Linux
+Windows
+MacOS
+Vxworks

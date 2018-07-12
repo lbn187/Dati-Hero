@@ -1,0 +1,5 @@
+55. Pascal 中 integer 和 long integer 类型的长度和编译选项是否有关系
+有关系
+有时候有关系
+没关系
+不确定

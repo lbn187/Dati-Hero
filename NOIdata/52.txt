@@ -1,0 +1,5 @@
+52. NOI 比赛使用的 Linux 发行版是:
+NOI Linux
+Fedora 5
+Debian Sarge 
+Gentoo 2006.1

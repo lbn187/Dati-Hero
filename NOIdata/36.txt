@@ -1,0 +1,5 @@
+36. 当前目录中有如下文件-rw-r--r-- 1 user None 8.7K Jul 2 16:35 foobar   -rw-r--r-- 1 user None 93 Jul 2 16:35 foobar.c   -rwx------ 1 user None 144 Jul 2 16:35 foobar.sh   其中可以执行的文件是:
+foobar.sh
+foo 
+foobar 
+foobar.c 

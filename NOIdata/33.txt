@@ -1,0 +1,5 @@
+33. 可执行文件 prog_1 向标准输出输出运行结果。如何将输出结果保存到 1.out文件中:
+./ prog_1 >1.out
+prog_1 <1.out
+./ prog_1 <1.out 
+prog_1 >1.out 

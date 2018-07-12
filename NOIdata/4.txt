@@ -1,0 +1,5 @@
+4. 在 Linux 中删除当前目录下的 test 目录的命令是:
+rm –r test 
+mv test 
+rm –p test 
+rm –f test

@@ -1,0 +1,5 @@
+15. Linux 系统中,测量当前目录下程序 test 运行时间的命令是:
+time ./test
+./test
+gdb test .
+time test

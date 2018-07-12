@@ -1,0 +1,5 @@
+40. 如何终止一个失去响应的进程（$pid 代表进程号）:
+kill $pid 
+stop $pid 
+hang $pid 
+rm $pid

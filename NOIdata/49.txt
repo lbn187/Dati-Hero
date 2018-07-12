@@ -1,0 +1,5 @@
+49. 如果需要在 Lazarus 中使用单步调试,则:
+在 Environment->Debugger Options 中配置
+无须配置
+在 File 选单中配置
+在 Tools->Diff 中配置

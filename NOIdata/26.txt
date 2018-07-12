@@ -1,0 +1,5 @@
+26. 如何在 Linux 的各个虚拟控制台中切换:
+Ctrl+Alt+F[1-6]
+Ctrl+F[1-6]
+Shift+F[1-6]
+Alt+F[1-6]

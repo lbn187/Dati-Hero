@@ -1,0 +1,5 @@
+47. 在 Lazarus 中调试程序,单步运行(Step over)的快捷键是:
+F8
+F4
+F6
+F9

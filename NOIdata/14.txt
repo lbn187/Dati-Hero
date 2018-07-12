@@ -1,0 +1,5 @@
+14. Linux 系统中,将当前目录下的文件名打印到 tmp 文件中的命令是:
+ls >tmp 
+ls tmp
+vi .
+ls -a tmp

@@ -1,0 +1,5 @@
+12. Linux 系统中编译 Pascal 程序的编译器是:
+fpc
+gcc 
+g++
+vc
